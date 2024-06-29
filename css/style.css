@@ -1,0 +1,63 @@
+/* Type or element selector */
+div {
+    color: blue;
+}
+
+/* class selector */
+.alert-text {
+    color: red;
+}
+
+/* id selector */
+#first-page {
+    color: blueviolet;
+}
+
+/* The single class selector */ 
+.read {
+    color: white;
+    background-color: black;
+}
+
+.unread {
+    color: white; 
+    background-color: black;
+}
+
+/* grouping class selectors */
+.read, 
+.unread {
+    color: white;
+    background-color: black;
+}
+
+/* Chaining selector */
+.subsection.header {
+    color: red;
+}
+/* In general, you cannot chain more than one type selector since
+    an element can't be two different types at once.
+*/
+/* chaining a class and id selector */
+.subsection#header {
+    color: green;
+}
+
+/* Combinator  */
+/* There are four type of combinators */ 
+
+/* Descendent combinator */
+/* Descendent combinator is represented in css by a single space 
+    between selector.
+    A descendent will only cause elements that match the last 
+    selector to be selected if they also have an ancestor 
+    (parents, grandparent, etc.) that matches the previous selector 
+
+    Another way to think of it is that "child" will only be selected
+    if it is nested inside "ancestor", regardless of how deep that
+    nesting is.
+*/
+.ancestor .contents {
+    background-color: aquamarine;
+}
+
