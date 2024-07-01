@@ -59,5 +59,13 @@ div {
 */
 .ancestor .contents {
     background-color: aquamarine;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
 }
 
+.image {
+    height: auto;
+    width: 500px;
+}
