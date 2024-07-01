@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Specificity</title> 
+
+    <link rel="stylesheet" href="./css/style_specificity.css">
+
+</head>
+<body>
+    <div class="main">
+        <div class="list subsection">Red Text</div>
+    </div> 
+
+    <div class="main2">
+        <div class="list2" id="subsection-id">Blue Text</div>
+    </div>
+
+    <div class="main3">
+        <div class="list3" id="subsection-id2">Red text on yellow backgroud</div>
+    </div>
+
+    <div id="parent">
+        I'm the parent
+        <div class="child">I'm the child</div>
+    </div>
+
+    <div class="alert warning">
+        I'm the first div
+        <div class="alert warning">Which one works</div>
+    </div>
+</body>
+</html>

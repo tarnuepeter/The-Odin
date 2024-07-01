@@ -1,0 +1,77 @@
+/* Rule 1 */
+.subsection {
+    color: blue;
+}
+
+/* rule 2 */
+.main .list {
+    color: red;
+}
+
+/* 
+    In the example above, both rules are using only class selectors, 
+    but rule 2 is more specific because it is using more class 
+    selectors, so the color: red declaration would take precedence.
+
+    When there is no declaration with a selector of higher 
+    specificity, a rule with a greater number of selectors 
+    of the same type will take precedence over another rule 
+    with fewer selectors of the same type.
+*/
+
+/* Rule 1 */
+#subsection-id {
+    color: blue
+} 
+
+
+/* Rule 2 */
+.main2 .list2 {
+    color: red;
+}
+
+/* 
+    In the example above, despite rule 2 having more class 
+    selectors than ID selectors, rule 1 is more specific 
+    because ID beats class. In this case, the color: 
+    blue declaration would take precedence.
+*/
+
+/* Rule 1 */
+#subsection-id2 {
+    background-color: yellow;
+    color: blue;
+}
+
+/* Rule 2 */
+.main3 #subsection-id2 {
+    color: red;
+}
+
+/* 
+    In this final example, the first rule uses an ID selector, 
+    while the second rule combines an ID selector with a class 
+    selector. Therefore, neither rule is using a more specific 
+    selector than the other. The cascade then checks the number 
+    of each selector type. Both rules have only one ID selector, 
+    but rule 2 has a class selector in addition to the ID selector, 
+    so rule 2 has a higher specificity!
+*/ 
+
+/* Inheritance */
+#parent {
+    color: red;
+}
+
+.child {
+    color: blue
+}
+
+/* Rule Order */
+.alert {
+    color: red;
+}
+
+.warning {
+    color: orange;
+}
