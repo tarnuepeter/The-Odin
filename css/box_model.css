@@ -1,0 +1,104 @@
+
+.para1 {
+    background-color: orange;
+    border: 20px solid black;
+    padding: 40px; 
+    margin: 60px;
+    box-sizing: border-box;
+}
+
+.para2 {
+   background-color: yellow;
+   border: 20px solid red;
+   padding: 30px; 
+   margin: 60px;
+   width: 100px;
+   height: autio;
+}
+
+.box-1 {
+    /* box-sizing: content-box; */
+    box-sizing: border-box;
+    background-color: greenyellow;
+    width: 700px;
+    height: 300px;
+
+    padding: 50px;
+
+    border: 30px solid black;
+}
+
+.box-2 {
+    box-sizing: border-box;
+    background-color: orange;
+    width: 700px; 
+    height: 300px;
+
+    padding: 50px;
+
+    /* border: 30px solid black; */
+}
+
+.hd-1 {
+    margin: 0 0 20px 0;
+} 
+
+.p1 {
+    margin: 10px 0 0 0;
+}
+
+.module {
+    padding:  1rem;
+    background: white;
+}
+
+.module h2 {
+    background: #90a4ae;
+    margin: -1rem -1rem -1rem -1rem; 
+    padding: 1rem;
+}
+
+.module :last-child {
+    margin-bottom: 0;
+}
+
+/* body {
+    background: #ddd;
+    margin:  1rem;
+    padding: 1rem;
+    max-width: 700px;
+    margin: 2rem auto;
+    font-family: "Open Sans", sans-serif;
+} */
+
+body {
+    max-width: 700px; 
+    margin: 0 auto;
+    padding: 1rem;
+}
+.para-div {
+    background: #90a4ab;
+}
+
+p {
+    border: 1px solid black;
+} 
+
+p:first-child {
+    margin-bottom:  -1rem;
+}
+
+/*  Child selector*/
+.para-div > p {
+    color: rgb(79, 47, 224);
+    background: greenyellow;
+}
+
+/* Attribute selectors */
+p[class="pp"] {
+    color: black;
+}
+
+p[class] {
+    color: black;
+}
